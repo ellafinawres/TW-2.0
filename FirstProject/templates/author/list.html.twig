@@ -22,7 +22,7 @@
             <td><img src="{{ asset(author.picture) }}" alt="author" height="100px" width="100px"></td>
             <td><a href="{{ path('details_author',{'id': author.id}) }}">details</a></td>
         </tr>
-        {% set x=author.nb_books %}
+        {% set x=x+author.nb_books %}
     {% endfor %}
     {% endif %}
 </table>
